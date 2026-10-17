@@ -51,12 +51,12 @@ export const getUSERNavItems = async (): Promise<NavSection[]> => {
     {
       title: "Order Summery",
       items: [
-        {
-          title: "My Order",
-          href: "/dashboard/my-order",
-          icon: "ShoppingBag",
-          roles: ["USER"],
-        },
+        // {
+        //   title: "My Order",
+        //   href: "/dashboard/my-order",
+        //   icon: "ShoppingBag",
+        //   roles: ["USER"],
+        // },
       ],
     },
   ];
@@ -83,70 +83,16 @@ export const adminNavItems: NavSection[] = [
       },
     ],
   },
-  {
-    title: "Book Management",
-    items: [
-      {
-        title: "Books",
-        href: "/admin/dashboard/all-books-management",
-        icon: "BookOpen",
-        roles: ["ADMIN"],
-        children: [
-          {
-            title: "Novel",
-            href: "/admin/dashboard/all-books-management/novel",
-            icon: "BookText",
-            roles: ["ADMIN"],
-          },
-          {
-            title: "Poem",
-            href: "/admin/dashboard/all-books-management/poem",
-            icon: "Feather",
-            roles: ["ADMIN"],
-          },
-          {
-            title: "Lyrics",
-            href: "/admin/dashboard/all-books-management/lyrics",
-            icon: "Music",
-            roles: ["ADMIN"],
-          },
-          {
-            title: "Other",
-            href: "/admin/dashboard/all-books-management/other",
-            icon: "FileText",
-            roles: ["ADMIN"],
-          },
-        ],
-      },
-    ],
-  },
+
   {
     title: "Home Pages Management",
     items: [
       {
-        title: "Media",
+        title: "Home Pages Management",
         href: "/admin/dashboard/all-media-management",
         icon: "Layers",
         roles: ["ADMIN"],
         children: [
-          {
-            title: "Video",
-            href: "/admin/dashboard/all-media-management/video",
-            icon: "Video",
-            roles: ["ADMIN"],
-          },
-          {
-            title: "Audio",
-            href: "/admin/dashboard/all-media-management/audio",
-            icon: "AudioLines",
-            roles: ["ADMIN"],
-          },
-          {
-            title: "Image",
-            href: "/admin/dashboard/all-media-management/image",
-            icon: "Image",
-            roles: ["ADMIN"],
-          },
           {
             title: "Hero Banner ",
             href: "/admin/dashboard/all-media-management/ai-explore",
@@ -169,24 +115,6 @@ export const adminNavItems: NavSection[] = [
             title: "The Ground",
             href: "/admin/dashboard/all-media-management/the-ground",
             icon: "MessageSquare",
-            roles: ["ADMIN"],
-          },
-          {
-            title: "Music",
-            href: "/admin/dashboard/all-media-management/music",
-            icon: "Music",
-            roles: ["ADMIN"],
-          },
-          {
-            title: "Musical Instruments",
-            href: "/admin/dashboard/all-media-management/musical-instrument",
-            icon: "Guitar",
-            roles: ["ADMIN"],
-          },
-          {
-            title: "Other",
-            href: "/admin/dashboard/all-media-management/other",
-            icon: "FileText",
             roles: ["ADMIN"],
           },
         ],
@@ -238,12 +166,6 @@ export const adminNavItems: NavSection[] = [
             title: "Social Media",
             href: "/admin/dashboard/settings/social-media",
             icon: "Share2",
-            roles: ["ADMIN"],
-          },
-          {
-            title: "Payment Method",
-            href: "/admin/dashboard/settings/payment-method",
-            icon: "CreditCard",
             roles: ["ADMIN"],
           },
         ],
